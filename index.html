@@ -1,28 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Advice generator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="css/main.min.css">
+
 </head>
+
 <body>
 
-  Advice #<!-- Advice ID goes here -->
+  <main class="content">
+    <article class="container">
+      <blockquote cite='http://html.conclase.net/w3c/html401...def-BLOCKQUOTE'>
+        <p class="advice--title">Advice #<span id="adviceId"></span></p>
+        <p class="advice--text">
+          "<span id="adviceText">It is easy to sit up and take notice, what's difficult is getting up and taking action.</span>"
+        </p>
+      </blockquote>
+      <picture>
+        <source srcset="./images/pattern-divider-mobile.svg" media="(max-width: 500px)">
+        <source srcset="./images/pattern-divider-desktop.svg">
+        <img srcset="./images/pattern-divider-desktop.svg" alt="Pattern divider">
+      </picture>
+      <button onClick="fetchAdvice();" class=" btn--dice"><img src="./images/icon-dice.svg" alt="Dice icon" srcset=""></button>
+    </article>
+  </main>
 
-  "<!-- Advice text goes here -->"
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Asarael Navarro</a>.
+    </div>
+  </footer>
+  <script src="./js/main.js"></script>
 </body>
+
 </html>
