@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Advice generator preview](./solution/advice-generator.jpg)
+![Advice generator preview](./public/cover.jpg)
 
 ### Links
 
